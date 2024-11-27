@@ -52,7 +52,7 @@ input::placeholder{
     max-width: 1256px;
     margin: 0 auto;
     align-items: center;
-    padding: 23px 0;
+    padding: 23px 10px;
 }
 
 .header-footer__name{
@@ -78,7 +78,7 @@ input::placeholder{
     color: #fff;
     right: 206px;
     cursor: pointer;
-    margin-right: 47px;
+    margin-right: 30px;
 }
 
 .header-footer__tel:hover{
@@ -112,6 +112,7 @@ input::placeholder{
 .welcome__desc{
     color: #fff;  
     max-width: 490px;
+    padding: 0 10px;
 }
 
 .welcome__title{
@@ -246,7 +247,7 @@ input::placeholder{
 }
 
 .main__catalog_img{
-    width: 679px;
+    max-width: 679px;
     position: relative;
 }
 
@@ -499,7 +500,7 @@ input::placeholder{
     flex-wrap: wrap;
     justify-content: end;
     max-width: 1090px;
-    margin: 0 100px 0 241px;
+    margin: 0 auto;
     padding-top: 107px;
     margin-bottom: 242px;
     position: relative;
@@ -744,7 +745,7 @@ input::placeholder{
 }
 
 .clients__feedback_card{
-    width: 376px;
+    max-width: 376px;
     padding: 24px 32px 67px 20px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
     position: relative;
@@ -908,7 +909,7 @@ input::placeholder{
 }
 
 .map__img{
-    width: 925px;
+    max-width: 925px;
 }
 
 .footer{
@@ -916,6 +917,190 @@ input::placeholder{
     font-family: "Nunito sans";
     font-size: 11px;
     padding: 15px 0;
+}
+
+@media (max-width:1200px){
+    .header-footer__name{
+        margin-right: 80px;
+    }
+
+    .styles{
+        padding: 137px 50px 97px 50px;
+    }
+
+    .styles__images-1{
+        right: 470px;
+    }
+
+    .styles__images-2{
+        right: 75px;
+    }
+
+    .clients__background{
+        top: 100px;
+    }
+
+    .map__background{
+        height: 838px;
+    }
+}
+
+@media(max-width:1100px){
+    .header-footer__name{
+        margin-right: 35px;
+    }
+
+    .header-footer__nav{
+        margin-right: 50px;
+    }
+
+    .main__catalog_slider{
+        margin-top: 25px;
+    }
+
+    .catalog{
+        padding: 107px 45px 414px;
+    }
+
+    .types__box{
+        gap: 10px;
+    }
+
+    .types__box_card_desc{
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .types__btn1{
+        left: 1px;
+    }
+
+    .types__btn2{
+        left: 370px;
+    }
+
+    .types__btn3{
+        left: 740px;
+    }
+
+    .visit__container{
+        gap: 35px 25px;
+    }
+
+    .styles{
+        padding: 137px 25px 97px 185px;
+    }
+
+    .styles__images-1{
+        right: 150px;
+    }
+
+    .styles__images-2{
+        display: none;
+    }
+
+    .clients__feedback{
+        gap: 30px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:950px){
+    .header-footer__nav_list{
+        gap: 20px;
+    }
+
+    .main__catalog{
+        flex-wrap: wrap;
+    }
+
+    .main__catalog_left{
+        margin: 0 auto;
+    }
+
+    .main__catalog_slider{
+        margin: 25px auto;
+    }
+
+    .main__catalog_right{
+        margin: 0 auto;
+    }
+
+    .welcome__desc{
+        margin: 0 auto;
+    }
+
+    .visit__container{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .visit__advantages{
+        gap: 80px;
+    }
+
+    .visit__form{
+        max-width: 400px;
+    }
+
+    .visit__form_box_input_desc{
+        width: 300px;
+    }
+
+    .visit__form_btn{
+        width: 182px;
+    }
+
+    .visit__bonus{
+        margin-right: 200px;
+    }
+
+    .control{
+        margin: -320px auto 100px;;
+    }
+
+    .types__btn1{
+        left: 0;
+    }
+
+    .types__btn2{
+        left: 325px;
+    }
+
+    .types__btn3{
+        left: 640px;
+    }
+
+    .visit__container{
+        padding: 80px 0 0;
+    }
+
+    .styles{
+        padding: 95px 25px 97px 70px;
+    }
+
+    .styles__images-1{
+        right: 80px;
+    }
+
+    .clients__background{
+        display: none;
+    }
+
+    .questions__form{
+        padding: 34px 82px;
+    }
+
+    .questions__form_box{
+        margin: 0 auto;
+    }
+
+    .map__background{
+        height: 447px;
+    }
+    .map__img{
+        display: none;
+    }
 }
 
 
