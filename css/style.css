@@ -1030,16 +1030,28 @@ input::placeholder{
         margin: 0 auto;
     }
 
+    .visit{
+        background-image: none;
+    }
+
     .visit__container{
         margin-top: 50px;
         margin-bottom: 100px;
+        padding: 80px 0 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .visit__advantages{
-        gap: 80px;
+        flex-direction: row;
+        max-width: 580px;
+        flex-wrap: wrap;
+        gap: 45px;
     }
 
     .visit__form{
+        min-width: 0;
         max-width: 400px;
     }
 
@@ -1059,6 +1071,11 @@ input::placeholder{
         margin: -320px auto 100px;;
     }
 
+    .types__box_card_desc_btn{
+        width: 200px;
+        font-size: 15px;
+    }
+
     .types__btn1{
         left: 0;
     }
@@ -1069,10 +1086,6 @@ input::placeholder{
 
     .types__btn3{
         left: 640px;
-    }
-
-    .visit__container{
-        padding: 80px 0 0;
     }
 
     .styles{
@@ -1087,6 +1100,14 @@ input::placeholder{
         display: none;
     }
 
+    .clients__feedback{
+        gap: 10px;
+    }
+
+    .clients__feedback_card_btn{
+        font-size: 13px;
+    }
+
     .questions__form{
         padding: 34px 82px;
     }
@@ -1095,11 +1116,203 @@ input::placeholder{
         margin: 0 auto;
     }
 
+    .questions__form_box_top{
+        flex-direction: column;
+    }
+
     .map__background{
         height: 447px;
     }
     .map__img{
         display: none;
+    }
+}
+
+@media(max-width:850px){
+
+    .header-footer__container{
+        justify-content: space-between;
+    }
+
+    .header-footer__nav{
+        display: none;
+    }
+
+    .control__video_img{
+        max-width: 750px;
+        margin-top: -10px;
+    }
+
+    .types__box{
+        flex-direction: column;
+        gap: 215px;
+    }
+
+    .types__btn1{
+        z-index: 1;
+    }
+
+    .desc2{
+        top: 940px;
+    }
+
+    .desc3{
+        top: 1580px;
+    }
+
+    .types__btn2 {
+        left: 0;
+        top: 1205px;
+    }
+
+    .types__btn3 {
+        left: 0;
+        top: 1845px;
+    }
+
+    .visit__container {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .visit__bonus{
+        margin-right: 0;
+    }
+
+    .clients{
+        display: none;
+    }
+
+    .questions__form{
+        margin: 0 auto;
+    }
+
+    .questions__form_box_top{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:700px){
+    .welcome__title {
+        font-size: 30px;
+    }
+
+    .welcome__text{
+        font-size: 18px;
+    }
+
+    .main__catalog_text{
+        margin-bottom: 20px;
+    }
+
+    .main__catalog_city {
+        gap: 20px;
+        max-width: 550px;
+    }
+
+    .main__catalog_img{
+        max-width: 450px;
+        margin-left: 50px;
+    }
+
+    .control__video_img {
+        max-width: 450px;
+        margin-top: -20px;
+    }
+
+    .control__video_play{
+        width: 70px;
+        height: 70px;
+        top: 170px;
+    }
+
+    .control__form_top {
+        flex-direction: column;
+        width: 450px;
+    }
+
+    .main__catalog_right{
+        margin: 30px auto 0;
+    }
+
+    .styles{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    .main__catalog_city {
+        max-width: 400px;
+    }
+
+    .main__catalog_img{
+        max-width: 400px;
+        margin-left: 0;
+    }
+
+    .control__text{
+        max-width: 450px;
+    }
+}
+
+@media(max-width:500px){
+    .map__contacts_text{
+        max-width: 255px;
+        font-size: 16px;
+    }
+
+    .main__catalog_img {
+        max-width: 360px;
+    }
+
+    .visit__advantages{
+        padding: 0 20px;
+    }
+
+    .control__video_img {
+        max-width: 360px;
+    }
+
+    .control__video_play{
+        top: 150px;
+    }
+
+    .control__text{
+        max-width: 360px;
+    }
+
+    .control__form_top{
+        max-width: 360px;
+    }
+
+    .map__container{
+        padding: 274px 30px 20px;
+    }  
+
+    .map__contacts{
+        max-width: 360px;
+    }
+
+
+}
+
+@media(max-width:450px){
+    .header-footer__btn{
+        width: 135px;
+        padding: 13px 15px;
+    }
+
+    .catalog{
+        padding: 107px 10px 414px;
+    }
+
+    .visit__form{
+        max-width: 360px;
+        padding: 25px 20px;
+    }
+
+    .main__catalog_city{
+        max-width: 360px;
     }
 }
 
@@ -1371,6 +1584,7 @@ input::placeholder{
     }
 
     .styles{
+        display: flex;
         background: transparent;
         padding: 120px 17px 0;
     }
@@ -1403,7 +1617,7 @@ input::placeholder{
     }
 
     .questions__form{
-        min-width: 375px;
+        min-width: 374px;
         padding: 173px 17px 46px;
         margin: -645px 0 0;
         z-index: -1;
